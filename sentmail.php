@@ -11,14 +11,13 @@ require_once('PHPMailer/PHPMailer/SMTP.php');
 
 $mail = new PHPMailer(true);
 try {
-	//phvdynbcxwatbibe
     //Server settings
     $mail->SMTPDebug = 2;                                 // Enable verbose debug output
     $mail->isSMTP();                                      // Set mailer to use SMTP
     $mail->Host = 'smtp.qq.com';  // Specify main and backup SMTP servers
     $mail->SMTPAuth = true;                               // Enable SMTP authentication
     $mail->Username = '525966315@qq.com';                 // SMTP username
-    $mail->Password = 'phvdynbcxwatbibe';                           // SMTP password
+    $mail->Password = '';                                 // SMTP password  You email Authorization code
     $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
     $mail->Port = 465;                                    // TCP port to connect to
 
